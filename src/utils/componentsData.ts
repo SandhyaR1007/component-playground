@@ -33,10 +33,21 @@ export const componentsData: Component[] = [
         id: "size",
         name: "Size",
         type: "select",
-        defaultValue: "medium",
+        defaultValue: "md",
         options: ["sm", "md", "lg"],
       },
     ],
     currentValues: {},
   },
 ];
+
+export const defaultComponentValues: Record<string, any> = {
+  button: {
+    variant: "primary",
+    size: "md",
+    label: "Button",
+    fullWidth: false,
+    disabled: false,
+    iconPosition: "none",
+  },
+};
